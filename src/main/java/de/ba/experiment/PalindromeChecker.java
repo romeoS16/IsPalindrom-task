@@ -1,6 +1,7 @@
 package de.ba.experiment;
 
 public class PalindromeChecker {
+
     /**
      * Prüft, ob ein gegebener String ein Palindrom ist.
      *
@@ -15,6 +16,7 @@ public class PalindromeChecker {
      * @param text der zu prüfende Text (kann null sein)
      * @return true, wenn der Text nach obiger Definition ein Palindrom ist, sonst false
      */
+
     public static boolean isPalindrome(String text) {
         // TODO: implementieren
         return false;
