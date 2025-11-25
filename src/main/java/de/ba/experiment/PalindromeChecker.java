@@ -16,7 +16,18 @@ public class PalindromeChecker {
      * @return true, wenn der Text nach obiger Definition ein Palindrom ist, sonst false
      */
     public static boolean isPalindrome(String text) {
-        // TODO: implementieren
-        return false;
+
+        if(text == null){
+            return false;
+        }
+        String newText = text.toLowerCase().replaceAll(" ", "");
+
+        int length = newText.length();
+        for(int i = 0; i < newText.length() - 1; i++){
+            if(newText.charAt(i) != newText.charAt(length - i - 1)){
+                return false;
+            }
+        }
+        return true;
     }
 }
